@@ -61,6 +61,7 @@ struct Actions getNotLoggedUserActions() {
 void exit() {
 
 }
+// dsadasds
 
 void login() {
 	struct User loggedUser;
