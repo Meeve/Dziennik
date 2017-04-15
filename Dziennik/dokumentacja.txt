@@ -1,0 +1,3 @@
+config - 
+	pierwsza liczba = ostatnie id,
+	druga liczba = iloœæ rekordów

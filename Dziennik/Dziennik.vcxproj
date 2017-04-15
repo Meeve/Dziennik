@@ -140,7 +140,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Źródło.c" />
+    <ClCompile Include="action.cpp" />
+    <ClCompile Include="fileConfig.cpp" />
+    <ClCompile Include="Source.c" />
+    <ClCompile Include="user.cpp" />
+    <ClCompile Include="userAction.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="action.h" />
+    <ClInclude Include="fileConfig.h" />
+    <ClInclude Include="user.h" />
+    <ClInclude Include="userAction.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -13,10 +13,45 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Pliki źródłowe\Utilities">
+      <UniqueIdentifier>{fd665c44-60e0-41c7-96d1-b35a0837cec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Model">
+      <UniqueIdentifier>{d67fa55b-b3ea-4cee-bc36-b872cbe57d3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Actions">
+      <UniqueIdentifier>{97074b3f-5339-45fd-b1e8-78646e2d5971}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Źródło.c">
+    <ClCompile Include="Source.c">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="fileConfig.cpp">
+      <Filter>Pliki źródłowe\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="action.cpp">
+      <Filter>Pliki źródłowe\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="user.cpp">
+      <Filter>Pliki źródłowe\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="userAction.cpp">
+      <Filter>Pliki źródłowe\Actions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fileConfig.h">
+      <Filter>Pliki źródłowe\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="action.h">
+      <Filter>Pliki źródłowe\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="user.h">
+      <Filter>Pliki źródłowe\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="userAction.h">
+      <Filter>Pliki źródłowe\Actions</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
