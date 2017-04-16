@@ -1,10 +1,8 @@
 Kamil Legutko,root,root,0,1
-Mikolaj Legutko,mikolaj,123,0,2
-Pelagia Legutko,pela,123,1,3
+Miko³aj Legutko,mikolaj,123,0,2
+Pelagia Pela,pela,123,1,3
 Michal Bazan,kilvan,123,1,4
-Daniel Wilkowski,Daniel,H4t3rS%&#+23J,2,5
+DanielX,login,password,1,5
 John Show,John,123,0,8
 Audrey Hepburn,Audrey,123,0,9
-Audrey Hepburn,Audrey,123,0,14
-Audrey Hepburn,Audrey,123,0,15
-Audrey Hepburn,Audrey,123,0,16
+Marilyn Monroe,Marilyn,123,0,11

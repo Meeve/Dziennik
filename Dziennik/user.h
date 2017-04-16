@@ -19,3 +19,5 @@ struct User getUserByAuthData(char * login, char  * password);
 struct User unserializeUser(char * buff);
 
 struct Users getAllUsers();
+
+void editUser(struct User user);

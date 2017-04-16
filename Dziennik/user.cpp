@@ -82,3 +82,39 @@ struct Users getAllUsers() {
 	fclose(fp);
 	return users;
 }
+
+void editUser(struct User user) {
+	struct Users users = getAllUsers();
+	char buff[64];
+
+	FILE *fp;
+	fp = fopen("users.txt", "w");
+
+	for (int i = 0; i < users.amount; i++) {
+		if (users.users[i].id == user.id) {
+			strcpy(users.users[i].name, user.name);
+			strcpy(users.users[i].login, user.login);
+			strcpy(users.users[i].password, user.password);
+			users.users[i].privilage = user.privilage;
+		}
+
+		fputs(users.users[i].name, fp);
+		fputs(",", fp);
+
+		fputs(users.users[i].login, fp);
+		fputs(",", fp);
+
+		fputs(users.users[i].password, fp);
+		fputs(",", fp);
+
+		itoa(users.users[i].privilage, buff, 10);
+		fputs(buff, fp);
+		fputs(",", fp);
+
+		itoa(users.users[i].id, buff, 10);
+		fputs(buff, fp);
+		fputs("\n", fp);
+	}
+
+	fclose(fp);
+}
