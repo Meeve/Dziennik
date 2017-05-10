@@ -80,7 +80,7 @@ void editClass(struct Class class)
 		fputs(classes.classes[i].name, file);
 		fputs(",", file);
 		fputs(classes.classes[i].year, file);
-		fputs(",", fp);
+		fputs(",", file);
 		itoa(classes.classes[i].id, buffer, 10);
 		fputs(buffer, file);
 		fputs("\n", file);
@@ -110,7 +110,7 @@ void removeClass(struct Class class)
 		fputs(classes.classes[i].name, file);
 		fputs(",", file);
 		fputs(classes.classes[i].year, file);
-		fputs(",", fp);
+		fputs(",", file);
 		itoa(classes.classes[i].id, buffer, 10);
 		fputs(buffer, file);
 		fputs("\n", file);
