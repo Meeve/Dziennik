@@ -32,7 +32,7 @@ void addClass(struct Class class)
 	
 }
 
-void removeClass(struct Class class)
+void editClass(struct Class class)
 {
 	struct Classes classes = GetAllClasses()
 	FILE *file;
