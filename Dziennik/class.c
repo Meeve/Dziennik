@@ -35,8 +35,21 @@ void addClass(struct Class class)
 void removeClass(struct Class class)
 {
 	struct Classes classes = GetAllClasses()
+	FILE *file;
+	file = fopen("classes.txt", "w")
+	int i;
+	for (i = 0; i<classes.amount; i++)
+	{
+		if (classes.classes[i].id = class id)
+			{	strcpy(classes.classes[i].name, class.name);
+				strcpy(classes.classes[i].yeat, class.year);
 
-	
+
+		}
+		fputs()
+	}
+
+
 
  
 	
