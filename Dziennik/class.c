@@ -32,6 +32,35 @@ void addClass(struct Class class)
 	
 }
 
+
+
+struct Class unserializeClass(char * buff) {
+	struct Class class;
+
+	strcpy(class.name, strtok(buff, ","));
+	strcpy(class.year, strtok(NULL, ","));
+	class.id = atoi(strtok(NULL, ","));
+	return class;
+}
+
+
+void GetAllClasses()
+{
+	FILE * file
+	char buffer[255];
+	struct Classes classes;
+	classes.amount = 0;
+	file = fopen("classes.txt", "r");
+
+	while(fgets(buffer,255,file)){
+			classes.classes[classes.amount] = unserializeClass(buffer);
+			classes.amount++;
+	}
+	fclose(file)
+	return classes;
+
+}
+
 void editClass(struct Class class)
 {
 	struct Classes classes = GetAllClasses()
@@ -60,34 +89,15 @@ void editClass(struct Class class)
 	}
 
 
-
+	fclose(file);
  
 	
 }
 
-struct Class unserializeClass(char * buff) {
-	struct Class class;
 
-	strcpy(class.name, strtok(buff, ","));
-	strcpy(class.year, strtok(NULL, ","));
-	class.id = atoi(strtok(NULL, ","));
-	return class;
-}
-
-
-void GetAllClasses()
+void removeClass(struct Class class)
 {
-	FILE * file
-	char buffer[255];
-	struct Classes classes;
-	classes.amount = 0;
-	file = fopen("classes.txt", "r");
 
-	while(fgets(buffer,255,file)){
-			classes.classes[classes.amount] = unserializeClass(buffer);
-			classes.amount++;
-	}
-	fclose(file)
-	return classes;
 
+	
 }
