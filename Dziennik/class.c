@@ -34,7 +34,9 @@ void addClass(struct Class class)
 
 void removeClass(struct Class class)
 {
+	struct Classes classes = GetAllClasses()
 
+	
 
  
 	
