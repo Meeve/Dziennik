@@ -115,6 +115,8 @@ void removeClass(struct Class class)
 		fputs(buffer, file);
 		fputs("\n", file);
 	}
-
+	struct ConfStruct confStruct = getConfClassStruct("classesConf.txt");
+	confStruct.amount--;
+	updateConfClassStruct(confStruct, "classesConf.txt");
 	fclose(file);
 }
