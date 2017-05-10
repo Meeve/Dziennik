@@ -38,15 +38,25 @@ void removeClass(struct Class class)
 	FILE *file;
 	file = fopen("classes.txt", "w")
 	int i;
+	char buffer[64];
 	for (i = 0; i<classes.amount; i++)
 	{
 		if (classes.classes[i].id = class id)
 			{	strcpy(classes.classes[i].name, class.name);
-				strcpy(classes.classes[i].yeat, class.year);
+				strcpy(classes.classes[i].year, class.year);
+
 
 
 		}
-		fputs()
+		fputs(classes.classes[i].name, file);
+		fputs(",", file);
+		fputs(classes.classes[i].year, file);
+		fputs(",", fp);
+		itoa(classes.classes[i].id, buffer, 10);
+		fputs(buffer, file);
+		fputs("\n", file);
+
+
 	}
 
 
