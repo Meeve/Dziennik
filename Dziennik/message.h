@@ -24,4 +24,3 @@ struct Message getUnread(int receiver);
 void getAllUserMessages(int receiver);
 void getAllMessages();
 struct Message unserializeMessage(char * buff);
-
