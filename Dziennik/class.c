@@ -33,7 +33,6 @@ void addClass(struct Class class)
 }
 
 
-
 struct Class unserializeClass(char * buff) {
 	struct Class class;
 
@@ -120,3 +119,5 @@ void removeClass(struct Class class)
 	updateConfClassStruct(confStruct, "classesConf.txt");
 	fclose(file);
 }
+
+

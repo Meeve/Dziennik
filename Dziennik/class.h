@@ -21,4 +21,5 @@ struct Class UnserializeClass(char * buff);
 void GetAllClasses();
 void removeClass(struct Class class);
 void editClass(struct Class class);
+void classActions(); //wyświetla dostępne akcje dotyczące klas
 
