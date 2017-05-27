@@ -43,7 +43,7 @@ struct Class unserializeClass(char * buff) {
 }
 
 
-struct Class GetAllClasses()
+struct Classes GetAllClasses()
 {
 	FILE * file
 	char buffer[255];
