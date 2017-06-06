@@ -22,21 +22,42 @@
     <Filter Include="Pliki źródłowe\Actions">
       <UniqueIdentifier>{97074b3f-5339-45fd-b1e8-78646e2d5971}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pliki źródłowe\Commands">
+      <UniqueIdentifier>{468bd947-b557-452b-a351-c3b0f239d179}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.c">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
-    <ClCompile Include="fileConfig.cpp">
+    <ClCompile Include="action.c">
       <Filter>Pliki źródłowe\Utilities</Filter>
     </ClCompile>
-    <ClCompile Include="action.cpp">
+    <ClCompile Include="fileConfig.c">
       <Filter>Pliki źródłowe\Utilities</Filter>
     </ClCompile>
-    <ClCompile Include="user.cpp">
+    <ClCompile Include="user.c">
       <Filter>Pliki źródłowe\Model</Filter>
     </ClCompile>
-    <ClCompile Include="userAction.cpp">
+    <ClCompile Include="userAction.c">
+      <Filter>Pliki źródłowe\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="teacherAction.c">
+      <Filter>Pliki źródłowe\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="pupilAction.c">
+      <Filter>Pliki źródłowe\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="elementsListing.c">
+      <Filter>Pliki źródłowe\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="authorization.c">
+      <Filter>Pliki źródłowe\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="message.c">
+      <Filter>Pliki źródłowe\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="messagesActions.c">
       <Filter>Pliki źródłowe\Actions</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,5 +74,29 @@
     <ClInclude Include="userAction.h">
       <Filter>Pliki źródłowe\Actions</Filter>
     </ClInclude>
+    <ClInclude Include="teacherAction.h">
+      <Filter>Pliki źródłowe\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="pupilAction.h">
+      <Filter>Pliki źródłowe\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="elementsListing.h">
+      <Filter>Pliki źródłowe\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="authorization.h">
+      <Filter>Pliki źródłowe\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="message.h">
+      <Filter>Pliki źródłowe\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="messagesActions.h">
+      <Filter>Pliki źródłowe\Actions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="users.txt" />
+    <Text Include="usersConf.txt" />
+    <Text Include="messagesConf.txt" />
+    <Text Include="messages.txt" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "fileConfig.h"
 #include "fileConfig.h"
 
@@ -40,8 +42,7 @@ struct ConfStruct getConfClassStruct(char * fileName) {
 	FILE *fp;
 	struct ConfStruct confStruct;
 
-	if (fp = fopen(fileName, "r") == NULL)
-	printf("Nie udało się otworzyć pliku");
+	fp = fopen(fileName, "r");
 	
 	char buff[255];
 

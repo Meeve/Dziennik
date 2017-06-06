@@ -3,24 +3,23 @@
 
 
 struct Message {
+	int id;
     char content[500];
     int receiver_id;
     int sender_id;
     int date;
-    bool viewed;
-
+    int viewed;
 };
 
 struct Messages {
     struct Message messages[300];
-    int receiver_id;
     int amount;
 };
 
 
 void sendMessage(struct Message messages);
 void deleteMessage(struct Message message);
-struct Message getUnread(int receiver);
-void getAllUserMessages(int receiver);
-void getAllMessages();
+int getUnread(int receiver);
+struct Messages getAllUserMessages(int receiver);
+struct Messages getAllMessages(int receiver_id);
 struct Message unserializeMessage(char * buff);

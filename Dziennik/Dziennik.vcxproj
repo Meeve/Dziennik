@@ -140,17 +140,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="action.cpp" />
-    <ClCompile Include="fileConfig.cpp" />
+    <ClCompile Include="action.c" />
+    <ClCompile Include="authorization.c" />
+    <ClCompile Include="elementsListing.c" />
+    <ClCompile Include="fileConfig.c" />
+    <ClCompile Include="message.c" />
+    <ClCompile Include="messagesActions.c" />
+    <ClCompile Include="pupilAction.c" />
     <ClCompile Include="Source.c" />
-    <ClCompile Include="user.cpp" />
-    <ClCompile Include="userAction.cpp" />
+    <ClCompile Include="teacherAction.c" />
+    <ClCompile Include="user.c" />
+    <ClCompile Include="userAction.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="action.h" />
+    <ClInclude Include="authorization.h" />
+    <ClInclude Include="elementsListing.h" />
     <ClInclude Include="fileConfig.h" />
+    <ClInclude Include="message.h" />
+    <ClInclude Include="messagesActions.h" />
+    <ClInclude Include="pupilAction.h" />
+    <ClInclude Include="teacherAction.h" />
     <ClInclude Include="user.h" />
     <ClInclude Include="userAction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="messages.txt" />
+    <Text Include="messagesConf.txt" />
+    <Text Include="users.txt" />
+    <Text Include="usersConf.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

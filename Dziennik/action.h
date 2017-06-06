@@ -1,8 +1,8 @@
 #pragma once
 
 struct Action {
-	char	text[255];
-	int(*func)();
+	char* (*getText)();
+	int (*func)();
 };
 
 struct Actions {

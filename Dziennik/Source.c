@@ -4,6 +4,7 @@
 #include "action.h"
 #include "user.h"
 #include "userAction.h"
+#include "message.h"
 
 
 int main() {

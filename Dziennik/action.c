@@ -4,7 +4,7 @@
 void printfActions(struct Actions actions) {
 	printf("Podaj numer akcji, aby kontynuowac \n");
 	for (int i = 0; i < actions.amount; i++) {
-		printf("%d. %s \n", i + 1, actions.actions[i].text);
+		printf("%d. %s \n", i + 1, actions.actions[i].getText());
 	}
 }
 
@@ -17,4 +17,12 @@ int getUserChoose(int from, int to) {
 			printf("Zly numer akcji, podaj go raz jeszcze \n");
 		}
 	}
+	return userChoose;
+}
+
+int giveControlToAction(struct Actions actions) {
+	printfActions(actions);
+	int userChoose = getUserChoose(1, actions.amount);
+
+	return actions.actions[userChoose - 1].func();
 }
