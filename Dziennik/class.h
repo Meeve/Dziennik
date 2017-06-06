@@ -18,7 +18,7 @@ struct Classes{
 
 void addClass(struct Class class);
 struct Class UnserializeClass(char * buff);
-void GetAllClasses();
+struct Class GetAllClasses();
 void removeClass(struct Class class);
 void editClass(struct Class class);
 void classActions(); //wyświetla dostępne akcje dotyczące klas
