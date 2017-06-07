@@ -60,6 +60,18 @@
     <ClCompile Include="messagesActions.c">
       <Filter>Pliki źródłowe\Actions</Filter>
     </ClCompile>
+    <ClCompile Include="gradesActions.c">
+      <Filter>Pliki źródłowe\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="grades.c">
+      <Filter>Pliki źródłowe\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="log.c">
+      <Filter>Pliki źródłowe\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="adminAction.c">
+      <Filter>Pliki źródłowe\Actions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fileConfig.h">
@@ -92,11 +104,27 @@
     <ClInclude Include="messagesActions.h">
       <Filter>Pliki źródłowe\Actions</Filter>
     </ClInclude>
+    <ClInclude Include="gradesActions.h">
+      <Filter>Pliki źródłowe\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="grades.h">
+      <Filter>Pliki źródłowe\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>Pliki źródłowe\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="adminAction.h">
+      <Filter>Pliki źródłowe\Actions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="users.txt" />
     <Text Include="usersConf.txt" />
     <Text Include="messagesConf.txt" />
     <Text Include="messages.txt" />
+    <Text Include="grades.txt" />
+    <Text Include="gradesConf.txt" />
+    <Text Include="logs.txt" />
+    <Text Include="logsConf.txt" />
   </ItemGroup>
 </Project>

@@ -12,3 +12,4 @@ struct Actions {
 
 void printfActions(struct Actions actions);
 int getUserChoose(int from, int to);
+char * getUserName(struct Users users, int id);

@@ -2,3 +2,6 @@
 
 char * getMessageText();
 int getMessage();
+
+char * showMessageText();
+int showMesage();

@@ -2,6 +2,8 @@
 #include "action.h";
 #include "teacherAction.h";
 #include "pupilAction.h";
+#include "adminAction.h"
+#include "log.h"
 
 struct User loggedUser;
 
@@ -20,7 +22,7 @@ char * finishText() {
 int login() {
 	struct Actions accessLayers[3];
 
-	//accessLayers[0] = getTeacherActions(); admin actions
+	accessLayers[0] = getAdminActions(); 
 	accessLayers[1] = getTeacherActions();
 	accessLayers[2] = getPupilActions();
 
@@ -36,11 +38,21 @@ int login() {
 	loggedUser = getUserByAuthData(inputData.login, inputData.password);
 
 	if (loggedUser.id != 0) {
+		struct Log log;
+		log.user_id = loggedUser.id;
+		strcpy(log.action, "Poprawnie sie zalogowano");
+		saveLog(log);
+		
 		printf("Udalo sie zalogowac \n \n");
 
 		while (giveControlToAction(accessLayers[loggedUser.privilage]) != 0) {}
 	}
 	else {
+		struct Log log;
+		log.user_id = 0;
+		strcpy(log.action, "Nie udalo sie zalogowac");
+		saveLog(log);
+
 		printf("Nie udalo sie zalogowac \n");
 	}
 	return 1;
@@ -57,4 +69,8 @@ char * logoutText() {
 
 int logout() {
 	return 0;
+}
+
+char * goBackText() {
+	return "Wroc";
 }

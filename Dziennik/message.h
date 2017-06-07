@@ -23,3 +23,4 @@ int getUnread(int receiver);
 struct Messages getAllUserMessages(int receiver);
 struct Messages getAllMessages(int receiver_id);
 struct Message unserializeMessage(char * buff);
+struct Message getMessageById(int id);

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "action.h"
+#include "user.h"
 
 void printfActions(struct Actions actions) {
 	printf("Podaj numer akcji, aby kontynuowac \n");
@@ -25,4 +26,14 @@ int giveControlToAction(struct Actions actions) {
 	int userChoose = getUserChoose(1, actions.amount);
 
 	return actions.actions[userChoose - 1].func();
+}
+
+
+char * getUserName(struct Users users, int id) {
+	for (int i = 0; i < users.amount; i++) {
+		if (users.users[i].id == id) {
+			return users.users[i].name;
+		}
+	}
+	return "Brak uzytkownika o podanym id";
 }

@@ -3,6 +3,7 @@
 #include "action.h";
 #include "messagesActions.h";
 #include "elementsListing.h";
+#include "gradesActions.h";
 
 struct Actions getTeacherActions() {
 	struct Actions teacherActions;
@@ -20,8 +21,16 @@ struct Actions getTeacherActions() {
 	teacherActions.actions[2].func = getMessage;
 	teacherActions.amount++;
 
-	teacherActions.actions[3].getText = logoutText;
-	teacherActions.actions[3].func = logout;
+	teacherActions.actions[3].getText = addGradeToUserText;
+	teacherActions.actions[3].func = addGradeToUser;
+	teacherActions.amount++;
+
+	teacherActions.actions[4].getText = getUserGradesText;
+	teacherActions.actions[4].func = getUserGrades;
+	teacherActions.amount++;
+
+	teacherActions.actions[5].getText = logoutText;
+	teacherActions.actions[5].func = logout;
 	teacherActions.amount++;
 
 	return teacherActions;

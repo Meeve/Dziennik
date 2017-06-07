@@ -2,6 +2,7 @@
 #include "user.h";
 #include "action.h";
 #include "elementsListing.h";
+#include "messagesActions.h"
 #include "authorization.h";
 
 
@@ -21,8 +22,12 @@ struct Actions getPupilActions() {
 	pupilActions.actions[2].func = getGrades;
 	pupilActions.amount++;
 
-	pupilActions.actions[3].getText = logoutText;
-	pupilActions.actions[3].func = logout;
+	pupilActions.actions[3].getText = getMessageText;
+	pupilActions.actions[3].func = getMessage;
+	pupilActions.amount++;
+
+	pupilActions.actions[4].getText = logoutText;
+	pupilActions.actions[4].func = logout;
 	pupilActions.amount++;
 
 	return pupilActions;

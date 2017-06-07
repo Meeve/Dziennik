@@ -31,7 +31,7 @@ void sendMessage(struct Message message) {
     fputs(buff, file);
     fputs("$", file);
 
-	itoa(message.viewed, buff, 10);
+	itoa(0, buff, 10);
 	fputs(buff, file);
 	fputs("$", file);
 
@@ -103,6 +103,22 @@ struct Messages getAllMessages(int receiver_id) {
     return messages;
 }
 
+struct Message getMessageById(int id) {
+	FILE *fp;
+	char buff[1000];
+
+	fp = fopen("messages.txt", "r");
+
+	while (fgets(buff, 1000, fp)) {
+		struct Message mess = unserializeMessage(buff);
+
+		if (mess.id == id) {
+			fclose(fp);
+			return mess;
+		}
+	}
+}
+
 struct Messages getAllUserMessages(int receiver_id) {
     FILE *fp;
     char buff[255];
@@ -157,5 +173,46 @@ void deleteMessage(struct Message message) {
 
     fclose(file);
 
+}
 
+void markRead(int id) {
+	struct Messages messages = getAllMessages(0);
+	FILE *file;
+	file = fopen("messages.txt", "w");
+	char buff[255];
+
+	for (int i = 0; i < messages.amount; i++) {
+
+		fputs(messages.messages[i].content, file);
+		fputs("$", file);
+
+		itoa(messages.messages[i].sender_id, buff, 10);
+		fputs(buff, file);
+		fputs("$", file);
+
+		itoa(messages.messages[i].receiver_id, buff, 10);
+		fputs(buff, file);
+		fputs("$", file);
+
+		itoa(messages.messages[i].date, buff, 10);
+		fputs(buff, file);
+		fputs("$", file);
+
+
+		if (messages.messages[i].id == id) {
+			itoa(1, buff, 10);
+		} else {
+			itoa(messages.messages[i].viewed, buff, 10);
+		}
+
+		fputs(buff, file);
+		fputs("$", file);
+
+		itoa(messages.messages[i].id, buff, 10);
+		fputs(buff, file);
+
+		fputs("\n", file);
+	}
+
+	fclose(file);
 }

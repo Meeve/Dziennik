@@ -10,3 +10,5 @@ char * loginText();
 
 char * logoutText();
 int logout();
+
+char * goBackText();

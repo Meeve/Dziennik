@@ -141,9 +141,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="action.c" />
+    <ClCompile Include="adminAction.c" />
     <ClCompile Include="authorization.c" />
     <ClCompile Include="elementsListing.c" />
     <ClCompile Include="fileConfig.c" />
+    <ClCompile Include="grades.c" />
+    <ClCompile Include="gradesActions.c" />
+    <ClCompile Include="log.c" />
     <ClCompile Include="message.c" />
     <ClCompile Include="messagesActions.c" />
     <ClCompile Include="pupilAction.c" />
@@ -154,9 +158,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="action.h" />
+    <ClInclude Include="adminAction.h" />
     <ClInclude Include="authorization.h" />
     <ClInclude Include="elementsListing.h" />
     <ClInclude Include="fileConfig.h" />
+    <ClInclude Include="grades.h" />
+    <ClInclude Include="gradesActions.h" />
+    <ClInclude Include="log.h" />
     <ClInclude Include="message.h" />
     <ClInclude Include="messagesActions.h" />
     <ClInclude Include="pupilAction.h" />
@@ -165,6 +173,10 @@
     <ClInclude Include="userAction.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="grades.txt" />
+    <Text Include="gradesConf.txt" />
+    <Text Include="logs.txt" />
+    <Text Include="logsConf.txt" />
     <Text Include="messages.txt" />
     <Text Include="messagesConf.txt" />
     <Text Include="users.txt" />

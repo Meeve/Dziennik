@@ -11,3 +11,8 @@ int getGrades();
 
 char * logoutText();
 int logout();
+
+char * printfLogsText();
+int printfLogs();
+
+int printfGrades(user_id);
